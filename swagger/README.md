@@ -21,7 +21,9 @@ OpenAPI 定义来显示 API ，使用各种编程语言生成服务器和客户�
 
 ## 二、什么是 Swagger API
 
-Swagger 简介 Swagger 是一套围绕 Open API 规范构建的开源工具，可以帮助设计，构建，记录和使用 REST API 。
+Swagger 是最流行的 API 开发工具，它遵循 OpenAPI Specification（OpenAPI 规范，也简称 OAS）。
+Swagger 可以贯穿于整个 API 生态，如 API 的设计、编写 API 文档、测试和部署。
+Swagger 是一种通用的，和编程语言无关的 API 描述规范。
 
 Swagger 工具包括的组件：
 
@@ -38,6 +40,10 @@ Swagger 工具包括的组件：
     Swagger Hub 中可以完成上面项目的所有工作，需要注册账号，分免费版和收费版。
 
 使用 Swagger 目的就是把相关的信息存储在定义的描述文件中，描述文件一般情况是 json 格式，但是也允许 yml 格式，后端开发通过维护这个描述文件去更新接口文档以及生成各端代码
+
+## 三、Swagger 应用场景
+- 如果你的 RESTful API 接口都开发完成了，你可以用 Swagger-editor 来编写 API 文档（ yaml 文件 或 json 文件），然后通过 Swagger-ui 来渲染该文件，以非常美观的形式将你的 API 文档，展现给你的团队或者客户。
+- 如果你的 RESTful API 还未开始，也可以使用 Swagger ，来设计和规范你的 API，以 Annotation （注解）的方式给你的源代码添加额外的数据。这样，Swagger 就可以检测到这些数据，自动生成对应的 API  文档。
 
 ## 三、Swagger2 常用注解
 
