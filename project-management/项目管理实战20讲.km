@@ -686,6 +686,14 @@
                                                     "font-size": 16
                                                 },
                                                 "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cnnt7ftdjcg0",
+                                                    "created": 1665970364396,
+                                                    "text": "启动过程组是最容易被忽略的过程组之一，越是持有结果导向的人，就越容易马上直奔主题去做，根本不管什么项目章程"
+                                                },
+                                                "children": []
                                             }
                                         ]
                                     },
@@ -703,6 +711,14 @@
                                                     "created": 1665725565225,
                                                     "text": "规划就是要把愿景目标转化为可落地的行动方案和工作路线",
                                                     "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cnnt9mffiz40",
+                                                    "created": 1665970535519,
+                                                    "text": "需要根据预期目标，明确项目范围，确定项目的里程碑阶段目标，为项目的执行做好各项准备"
                                                 },
                                                 "children": []
                                             }
@@ -724,6 +740,14 @@
                                                     "font-size": 16
                                                 },
                                                 "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cnntasgd3ao0",
+                                                    "created": 1665970627000,
+                                                    "text": "规划做好之后，就是考验执行力的时候了。这个阶段重在整合资源，推进项目落地，完成项目管理计划中确定的工作以实现项目目标"
+                                                },
+                                                "children": []
                                             }
                                         ]
                                     },
@@ -741,6 +765,14 @@
                                                     "created": 1665725565049,
                                                     "text": "对项目的进展、范围、质量等进行跟踪和监控，识别目前的进度与计划之间的偏差，从而快速准确地采取办法进行纠正和调整",
                                                     "font-size": 16
+                                                },
+                                                "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cnntb5u32hs0",
+                                                    "created": 1665970656128,
+                                                    "text": "执行并不意味着在任何情况下都要一成不变。当外界环境或内部要求发生变化时，项目管理者也要审时度势，沉着应变，适时地调整各方，以更地实现目标"
                                                 },
                                                 "children": []
                                             }
@@ -762,6 +794,14 @@
                                                     "font-size": 16
                                                 },
                                                 "children": []
+                                            },
+                                            {
+                                                "data": {
+                                                    "id": "cnntbrm27io0",
+                                                    "created": 1665970703532,
+                                                    "text": "复盘通常会带给我们很多有价值的信息和启示，比如哪些致命风险需要在一开始就被很好地管理和应对，再来一次的话，我们该怎么做"
+                                                },
+                                                "children": []
                                             }
                                         ]
                                     }
@@ -775,6 +815,30 @@
                                     "font-size": 16
                                 },
                                 "children": [
+                                    {
+                                        "data": {
+                                            "id": "cnnthfssjps0",
+                                            "created": 1665971148002,
+                                            "text": "项目管理有着天然的无边界属性，这也就意味着，放眼全局你能看到的地方，你什么都得操心、什么活都得干。所以，要搞清楚这件事，其实是很难的。\n别的角色都有自己的输出、自己的作品和固定的职责，但是好的项目经理却是融于无形的，整体项目团队的产出就是项目经理的作品"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cnnti6bvnls0",
+                                            "created": 1665971205753,
+                                            "text": "业务最顶层的战略意图，需要一层层地进行拆解。首先，你要围绕组织绩效目标，定位出核心的3～5 件要事，即关键战役，再把关键战役进行规划分解，拆到可交付可验收的里程碑，最后落地到版本/迭代的工作安排中"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cnntiooz4xc0",
+                                            "created": 1665971245727,
+                                            "text": "你还要通过清晰而系统的反馈机制和平台，把执行中的进展状态、变更、风险等集中呈现，以帮助管理者更好地进行优化和调整。\n比如，结合产出进度来调整业务策略，通过里程碑状态信息来调整目标和规划的节奏，根据人力投入的分布，来优化整体的资源配置"
+                                        },
+                                        "children": []
+                                    },
                                     {
                                         "data": {
                                             "id": "cnlegtmlprc0",
@@ -801,8 +865,50 @@
                                             "font-size": 16
                                         },
                                         "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cnntdk1vlcw0",
+                                            "created": 1665970843802,
+                                            "text": " ",
+                                            "image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/d1c8ee87415e460db9b3a9d5d00f4d2b~tplv-k3u1fbpfcp-watermark.image?",
+                                            "imageTitle": "",
+                                            "imageSize": {
+                                                "width": 200,
+                                                "height": 127
+                                            }
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cnntekgqups0",
+                                            "created": 1665970923065,
+                                            "text": " ",
+                                            "image": "https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5eb05a1df82447f787fbd97f4676ae28~tplv-k3u1fbpfcp-watermark.image?",
+                                            "imageTitle": "",
+                                            "imageSize": {
+                                                "width": 200,
+                                                "height": 141
+                                            }
+                                        },
+                                        "children": []
                                     }
                                 ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cnntfn2lpnc0",
+                                    "created": 1665971007105,
+                                    "text": " ",
+                                    "image": "https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9ad11e7b69e2435db5b9416001110231~tplv-k3u1fbpfcp-watermark.image?",
+                                    "imageTitle": "",
+                                    "imageSize": {
+                                        "width": 200,
+                                        "height": 130
+                                    }
+                                },
+                                "children": []
                             }
                         ]
                     }
