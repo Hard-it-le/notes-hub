@@ -1,4 +1,4 @@
-[Git](http://destyy.com/wZnV3h)是由**Linus Torvalds**为 Linux 内核开发设计和开发的。Git 为非线性分布式开发提供支持，允许多个贡献者同时处理一个项目。Git 是最流行的分布式版本控制和源代码管理系统。本指南解释了如何使用各自的包管理器在 GNU/Linux、Mac Osx 和 Windows 上安装最新的、稳定的、预打包版本的 git。[Git](http://destyy.com/wZnV3h)也可以从[源代码编译并安装](http://destyy.com/wZn3pu)在任何操作系统上。
+[Git](http://destyy.com/wZnV3h) 是由**Linus Torvalds**为 Linux 内核开发设计和开发的。Git 为非线性分布式开发提供支持，允许多个贡献者同时处理一个项目。Git 是最流行的分布式版本控制和源代码管理系统。本指南解释了如何使用各自的包管理器在 GNU/Linux、Mac Osx 和 Windows 上安装最新的、稳定的、预打包版本的 git。[Git](http://destyy.com/wZnV3h) 也可以从[源代码编译并安装](http://destyy.com/wZn3pu)在任何操作系统上。
 
 ## Window Git 安装教程
 
