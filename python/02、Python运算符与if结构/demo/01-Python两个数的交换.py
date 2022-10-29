@@ -12,3 +12,5 @@ c1 = temp
 
 print(f'1号杯中：{c1}')
 print(f'2号杯中：{c2}')
+
+
