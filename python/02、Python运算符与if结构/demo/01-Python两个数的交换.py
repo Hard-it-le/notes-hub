@@ -14,3 +14,18 @@ print(f'1号杯中：{c1}')
 print(f'2号杯中：{c2}')
 
 
+
+str1 = "test1"
+
+str2 = "test2"
+
+print("两个数交换之前的值str1 =  %s，str2 = %s" % (str1, str2))
+
+temps = str2
+
+str2 = str1
+
+str1 = temps
+
+
+print("两个数交换之后的值str1 =  %s，str2 = %s" % (str1, str2))
