@@ -2,7 +2,7 @@
 
   
 
-![](http://qiniu.it-pang.com//img/chrome-plugins-01.png)
+![](http://qiniu.it-pang.com/img/chrome-plugins-01.png)
 
   
 现在，网络可能是您投入大部分时间和精力的地方，为了访问网络，我们使用浏览器。

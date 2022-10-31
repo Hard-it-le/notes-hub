@@ -1,3 +1,5 @@
+# 值得学习的 Git Commit Message 管理规范
+![image-1667210056234](https://qiniu.it-pang.com/halo/image-1667210056234.png)
 目前大多数的公司和开发者都选择 Git 作为版本控制工具，这意味着每个开发者每天都在使用 Git，都会使用 Git Commit Mesasge ，虽然 Git Commit Message 看起来很简单，但实际上却异常重要。
 
 每个接触项目的开发者通过 Git Commit Message 快速了解当次提交的信息，比如新增了那些功能、解决了那些 Bug、优化了那些问题等。所以一套有效 Git Commit Message 管理规范是很有必要的。也对项目有着更好的维护性。

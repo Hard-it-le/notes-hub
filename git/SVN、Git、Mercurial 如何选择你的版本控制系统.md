@@ -1,4 +1,4 @@
-
+# SVN、Git、Mercurial 如何选择你的版本控制系统
 ![image.png](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2c150738d00b43c89c55b9903f2a3a0b~tplv-k3u1fbpfcp-watermark.image?)
 
 近年来，Git 的使用极大地普及了分布式版本控制系统。根据 Eclipse 社区调查，2014 年 Git 最终超越 SVN，成为 Java 开发人员首选的版本控制系统 (VCS)。
