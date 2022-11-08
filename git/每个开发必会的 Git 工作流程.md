@@ -1,21 +1,24 @@
-1.git clone // 到本地
-2.git checkout -b xxx 切换至新分支xxx
-（相当于复制了remote的仓库到本地的xxx分支上
-3.修改或者添加本地代码（部署在硬盘的源文件上）
-4.git diff 查看自己对代码做出的改变
-5.git add 上传更新后的代码至暂存区
-6.git commit 可以将暂存区里更新后的代码更新到本地git
-7.git push origin xxx 将本地的xxxgit分支上传至github上的git
+# 每个开发都必会的 Git 工作流程
+
+Git 工作流程每个公司或者个人习惯都不是统一，因此，基于大公司都会有一套标准的 Git 工作流程
+
+## 单人开发
+
+- git clone （本地拉取代码）
+- git checkout -b xxx  （从某个分支切换到新分支 xxx 上）
+- 本地修改 xxx 分支代码
+- git status （查看自己修改了那些文件）
+- git diff （查看自己对文件代码的改变）
+- git add （上传更新后的代码到暂存区）
+- git commit -m "信息"（将暂存区的代码提交到本地 git 仓库）
+- git push origin xxx （将本地的 xxx 分支上传到 github 上）
+
+## 多人开发
 -----------------------------------------------------------
-（如果在写自己的代码过程中发现远端GitHub上代码出现改变）
-1.git checkout main 切换回main分支
-2.git pull origin master(main) 将远端修改过的代码再更新到本地
-3.git checkout xxx 回到xxx分支
-4.git rebase main 我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容
-（中途可能会出现，rebase conflict -----》手动选择保留哪段代码）
-5.git push -f origin xxx 把rebase后并且更新过的代码再push到远端github上
-（-f ---》强行）
-6.原项目主人采用pull request 中的 squash and merge 合并所有不同的commit
+- git checkout master （切换到主分支）
+- git checkout xxx 回到xxx分支
+- git rebase main （我在xxx分支上，先把main移过来，然后根据我的commit来修改成新的内容）
+- git push -f origin xxx（把rebase后并且更新过的代码再push到远端github上）
 ----------------------------------------------------------------------------------------------
 远端完成更新后
 1.git branch -d xxx 删除本地的git分支
