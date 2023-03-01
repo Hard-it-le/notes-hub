@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "f58e131ceaccca32",
+        "id": "6ab1a0b97ba76584",
         "type": "tabs",
         "children": [
           {
-            "id": "635aeda2d3ca643b",
+            "id": "1db6564cb716deb2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "bug 修复流程.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "bug 修复流程.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "bug 修复流程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "bug 修复流程.md"
-              }
+              "state": {}
             }
           },
           {
@@ -155,8 +147,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "635aeda2d3ca643b",
+  "active": "1db6564cb716deb2",
   "lastOpenFiles": [
+    "bug 修复流程.md",
     "authing-server 接口透传方案.md",
     "桌搭笔记.md",
     "软件开发的核心原则.md",
