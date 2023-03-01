@@ -1,30 +1,32 @@
 ## 概述
 
-在实际生产环境中，一个应用往往由许多服务构成，而docker的最佳实践是一个容器只运行一个进程，因此运行多个微服务就要运行多个容器。多个容器协同工作需要一个有效的工具来管理他们，定义这些容器如何相互关联。compose应运而生。compose是用来定义和运行一个或多个容器(通常都是多个)运行和应用的工具。使用compose可以简化容器镜像的构建以及容器的运行。compose使用YAML文件来定义多容器之间的关系。一个docker-composeup就可以把完整的应用跑起来。本质上，compose把YAML文件解析成docker命令的参数，然后调用相应的docker命令行接口，从而将应用以容器化的方式管理起来。它通过解析容器间的依赖关系顺序地启动容器。而容器间的依赖关系由YAML文件中的links标记指定。
+在实际生产环境中，一个应用往往由许多服务构成，而 docker 的最佳实践是一个容器只运行一个进程，因此运行多个微服务就要运行多个容器。多个容器协同工作需要一个有效的工具来管理他们，定义这些容器如何相互关联。compose 应运而生。compose 是用来定义和运行一个或多个容器(通常都是多个)运行和应用的工具。使用 compose 可以简化容器镜像的构建以及容器的运行。compose 使用 YAML 文件来定义多容器之间的关系。一个 docker-composeup 就可以把完整的应用跑起来。本质上，compose 把 YAML 文件解析成 docker 命令的参数，然后调用相应的 docker 命令行接口，从而将应用以容器化的方式管理起来。它通过解析容器间的依赖关系顺序地启动容器。而容器间的依赖关系由 YAML 文件中的 links 标记指定。
 
 ## 什么是 docker-compose
 
-Docker Compose是一个用来定义和运行复杂应用的Docker工具。一个使用Docker容器的应用，通常由多个容器组成。使用Docker Compose不再需要使用shell脚本来启动容器。
+Docker Compose 是一个用来定义和运行复杂应用的 Docker 工具。一个使用 Docker 容器的应用，通常由多个容器组成。使用 Docker Compose 不再需要使用 shell 脚本来启动容器。
 
-Docker Compose能够在Docker节点上，以单引擎模式（Single-Engine Mode）进行多容器应用的部署和管理。多数的现代应用通过多个更小的微服务互相协同来组成一个完整可用的应用。
+Docker Compose 能够在 Docker 节点上，以单引擎模式（Single-Engine Mode）进行多容器应用的部署和管理。多数的现代应用通过多个更小的微服务互相协同来组成一个完整可用的应用。
 
-Docker Compose并不是通过脚本和各种冗长的docker命令来将应用组件组织起来，而是通过一个声明式的配置文件描述整个应用，从而使用一条命令完成部署。应用部署成功后，还可以通过一系列简单的命令实现对其完整声明周期的管理。甚至，配置文件还可以置于版本控制系统中进行存储和管理。
+Docker Compose 并不是通过脚本和各种冗长的 docker 命令来将应用组件组织起来，而是通过一个声明式的配置文件描述整个应用，从而使用一条命令完成部署。应用部署成功后，还可以通过一系列简单的命令实现对其完整声明周期的管理。甚至，配置文件还可以置于版本控制系统中进行存储和管理。
 
-在配置文件中，所有的容器通过services来定义，然后使用docker-compose脚本来启动，停止和重启应用，和应用中的服务以及所有依赖服务的容器，非常适合组合使用多个容器进行开发的场景。
+在配置文件中，所有的容器通过 services 来定义，然后使用 docker-compose 脚本来启动，停止和重启应用，和应用中的服务以及所有依赖服务的容器，非常适合组合使用多个容器进行开发的场景。
 
-## docker compose的背景
+## docker compose 的背景
 
-Docker Compose的前身是Fig。Fig是一个由Orchard公司开发的强有力的工具，在当时是进行多容器管理的最佳方案。Fig是一个基于Docker的Python工具，允许用户基于一个YAML文件定义多容器应用，从而可以使用fig命令行工具进行应用的部署。Fig还可以对应用的全生命周期进行管理。内部实现上，Fig会解析YAML文件，并通过Docker API进行应用的部署和管理。在2014年，Docker公司收购了Orchard公司，并将Fig更名为Docker Compose。命令行工具也从fig更名为docker-compose，并自此成为绑定在Docker引擎之上的外部工具。虽然它从未完全集成到Docker引擎中，但是仍然受到广泛关注并得到普遍使用。直至今日，Docker Compose仍然是一个需要在Docker主机上进行安装的外部Python工具。使用它时，首先编写定义多容器（多服务）应用的YAML文件，然后将其交由docker-compose命令处理，Docker Compose就会基于Docker引擎API完成应用的部署。
+Docker Compose 的前身是 Fig。Fig 是一个由 Orchard 公司开发的强有力的工具，在当时是进行多容器管理的最佳方案。Fig 是一个基于 Docker 的 Python 工具，允许用户基于一个 YAML 文件定义多容器应用，从而可以使用 fig 命令行工具进行应用的部署。Fig 还可以对应用的全生命周期进行管理。内部实现上，Fig 会解析 YAML 文件，并通过 Docker API 进行应用的部署和管理。在 2014 年，Docker 公司收购了 Orchard 公司，并将 Fig 更名为 Docker Compose。命令行工具也从 fig 更名为 docker-compose，并自此成为绑定在 Docker 引擎之上的外部工具。虽然它从未完全集成到 Docker 引擎中，但是仍然受到广泛关注并得到普遍使用。直至今日，Docker Compose 仍然是一个需要在 Docker 主机上进行安装的外部 Python 工具。使用它时，首先编写定义多容器（多服务）应用的 YAML 文件，然后将其交由 docker-compose 命令处理，Docker Compose 就会基于 Docker 引擎 API 完成应用的部署。
 
 ## docker compose 的安装
 
-- 官网下载
-
-  <https://github.com/docker/compose> 通过 官网直接下载即可
-
-- 在线链接下载
-
-  sudo curl -L <https://github.com/docker/compose/releases/download/1.16.1/docker-compose>-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+- 下载
+	- 官网下载
+	    <https://github.com/docker/compose> 通过官网直接下载即可
+	    
+	-  在线下载
+	  ```bash
+	  sudo curl -L  <https://github.com/docker/compose/releases/download/1.16.1/docker-compose>-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+```
+	  
 
 - 授权
 
@@ -44,27 +46,27 @@ Docker Compose的前身是Fig。Fig是一个由Orchard公司开发的强有力�
 
 ## docker-compsoe 的配置文件详解
 
-Docker Compose使用YAML文件来定义多服务的应用。YAML是JSON的一个子集，因此也可以使用JSON。
+Docker Compose 使用 YAML 文件来定义多服务的应用。YAML 是 JSON 的一个子集，因此也可以使用 JSON。
 
-Docker Compose默认使用文件名docker-compose.yml。当然，也可以使用-f参数指定具体文件。
+Docker Compose 默认使用文件名 docker-compose.yml。当然，也可以使用-f 参数指定具体文件。
 
-Docker Compose的YAML文件包含4个一级key：version、services、networks、volumes
+Docker Compose 的 YAML 文件包含 4 个一级 key：version、services、networks、volumes
 
-- version是必须指定的，而且总是位于文件的第一行。它定义了Compose文件格式（主要是API）的版本。注意，version并非定义Docker Compose或Docker引擎的版本号。
+- version 是必须指定的，而且总是位于文件的第一行。它定义了 Compose 文件格式（主要是 API）的版本。注意，version 并非定义 Docker Compose 或 Docker 引擎的版本号。
 
-- services用于定义不同的应用服务。上边的例子定义了两个服务：一个名为lagou-mysql数据库服务以及一个名为lagou-eureka的微服。Docker Compose会将每个服务部署在各自的容器中。
+- services 用于定义不同的应用服务。上边的例子定义了两个服务：一个名为 mysql 数据库服务以及一个名为 eureka 的微服务。Docker Compose 会将每个服务部署在各自的容器中。
 
-- networks用于指引Docker创建新的网络。默认情况下，Docker Compose会创建bridge网络。这是一种单主机网络，只能够实现同一主机上容器的连接。当然，也可以使用driver属性来指定不同的网络类型。
+- networks 用于指引 Docker 创建新的网络。默认情况下，Docker Compose 会创建 bridge 网络。这是一种单主机网络，只能够实现同一主机上容器的连接。当然，也可以使用 driver 属性来指定不同的网络类型。
 
-- volumes用于指引Docker来创建新的卷。
+- volumes 用于指引 Docker 来创建新的卷。
 
 ### 1、image
 
-指定为镜像名称或镜像ID。如果镜像不存在，Compose将尝试从互联网拉取这个镜像，例如： image: ubuntu image: orchardup/postgresql image: a4bc65fd
+指定为镜像名称或镜像 ID。如果镜像不存在，Compose 将尝试从互联网拉取这个镜像，例如： image: ubuntu image: orchardup/postgresql image: a4bc65fd
 
 ### 2、build
 
-指定Dockerfile所在文件夹的路径。Compose将会利用他自动构建这个镜像，然后使用这个镜像。 build: ./dir
+指定 Dockerfile 所在文件夹的路径。Compose 将会利用他自动构建这个镜像，然后使用这个镜像。 build: ./dir
 
 ### 3、command
 
@@ -85,7 +87,7 @@ links:
 
 ### 5、external_links
 
-链接到docker-compose.yml外部的容器，甚至并非是Compose管理的容器。参数格式和links类似。 external_links:
+链接到 docker-compose.yml 外部的容器，甚至并非是 Compose 管理的容器。参数格式和 links 类似。 external_links:
 
 ```
 - redis_1
@@ -108,7 +110,7 @@ ports:
 
 ### 7、expose
 
-暴露端口，与posts不同的是expose只可以暴露端口而不能映射到主机，只供外部服务连接使用；仅可以指定内部端口为参数。
+暴露端口，与 posts 不同的是 expose 只可以暴露端口而不能映射到主机，只供外部服务连接使用；仅可以指定内部端口为参数。
 
 ```
 expose:
@@ -118,7 +120,7 @@ expose:
 
 ### 8、volumes
 
-设置卷挂载的路径。可以设置宿主机路径:容器路径（host:container）或加上访问模式（host:container:ro）ro就是readonly的意思，只读模式。
+设置卷挂载的路径。可以设置宿主机路径:容器路径（host:container）或加上访问模式（host:container:ro）ro 就是 readonly 的意思，只读模式。
 
 ```
 volumes:
@@ -138,7 +140,7 @@ volumes_from:
 
 ### 10、environment
 
-设置环境变量。可以属于数组或字典两种格式。 如果只给定变量的名称则会自动加载它在Compose主机上的值，可以用来防止泄露不必要的数据。
+设置环境变量。可以属于数组或字典两种格式。 如果只给定变量的名称则会自动加载它在 Compose 主机上的值，可以用来防止泄露不必要的数据。
 
 ```
 environment:
@@ -148,7 +150,7 @@ environment:
 
 ### 11、env_file
 
-从文件中获取环境变量，可以为单独的文件路径或列表。 如果通过docker-compose -f FILE指定了模板文件，则env_file中路径会基于模板文件路径。 如果有变量名称与environment指令冲突，则以后者为准。
+从文件中获取环境变量，可以为单独的文件路径或列表。 如果通过 docker-compose -f FILE 指定了模板文件，则 env_file 中路径会基于模板文件路径。 如果有变量名称与 environment 指令冲突，则以后者为准。
 
 ```
 env_file: .env
@@ -167,7 +169,7 @@ RACK_ENV=development
 
 ### 12、extends
 
-基于已有的服务进行服务扩展。例如我们已经有了一个webapp服务，模板文件为common.yml.
+基于已有的服务进行服务扩展。例如我们已经有了一个 webapp 服务，模板文件为 common.yml.
 
 ```
 # common.yml
@@ -184,7 +186,7 @@ environment:
 web:
 extends:
 file: common.yml
-service: 
+service:
   webapp:
     ports:
       \ - "8080:80"
@@ -196,11 +198,11 @@ service:
     image: mysql:5.7
 ```
 
-后者会自动继承common.yml中的webapp服务及相关的环境变量。
+后者会自动继承 common.yml 中的 webapp 服务及相关的环境变量。
 
 ### 13、net
 
-设置网络模式。使用和docker client 的 --net 参数一样的值。
+设置网络模式。使用和 docker client 的 --net 参数一样的值。
 
 ```
 # 容器默认连接的网络，是所有Docker安装时都默认安装的docker0网络.
@@ -213,11 +215,11 @@ net: "container:[name or id]"
 net: "host"
 ```
 
-Docker会为每个节点自动创建三个网络： 网络名称 作用 bridge 容器默认连接的网络，是所有Docker安装时都默认安装的docker0网络 none 容器定制的网络栈 host 在宿主网络栈上添加一个容器，容器中的网络配置会与宿主的一样 附录： 操作名称 命令 创建网络 docker network create -d bridge mynet 查看网络列表 docker network ls
+Docker 会为每个节点自动创建三个网络： 网络名称 作用 bridge 容器默认连接的网络，是所有 Docker 安装时都默认安装的 docker0 网络 none 容器定制的网络栈 host 在宿主网络栈上添加一个容器，容器中的网络配置会与宿主的一样 附录： 操作名称 命令 创建网络 docker network create -d bridge mynet 查看网络列表 docker network ls
 
 ### 14、pid
 
-和宿主机系统共享进程命名空间，打开该选项的容器可以相互通过进程id来访问和操作。
+和宿主机系统共享进程命名空间，打开该选项的容器可以相互通过进程 id 来访问和操作。
 
 ```
 pid: "host"
@@ -235,7 +237,7 @@ dns:
 
 ### 16、cap_add，cap_drop
 
-添加或放弃容器的Linux能力（Capability）。
+添加或放弃容器的 Linux 能力（Capability）。
 
 ```
 cap_add:
@@ -247,7 +249,7 @@ cap_drop:
 
 ### 17、dns_search
 
-配置DNS搜索域。可以是一个值也可以是一个列表。
+配置 DNS 搜索域。可以是一个值也可以是一个列表。
 
 ```
 dns_search: example.com
@@ -277,7 +279,7 @@ tty: true
 
 | 命令                   | 说明                 |
 | ---------------------- | -------------------- |
-| docker-compose up -d   | 启动服务             |
+| docker-compose up -d   | 创建并启动服务             |
 | docker-compose down    | 停止服务             |
 | docker-compose ps      | 列出所有运行容器     |
 | docker-compose logs    | 查看服务日志         |
@@ -642,6 +644,6 @@ networks:
 
 ## 总结
 
- docker-compsoe 是一个非常有必要学习的东西，挺不错的
+docker-compsoe 是一个非常有必要学习的东西，挺不错的
 
- 使用compose对Docker容器进行编排管理时，需要编写docker-compose.yml文件，初次编写时，容易遇到一些比较低级的问题，导致执行docker-compose up时先解析yml文件的错误。比较常见的是yml对缩进的严格要求。
+使用 compose 对 Docker 容器进行编排管理时，需要编写 docker-compose.yml 文件，初次编写时，容易遇到一些比较低级的问题，导致执行 docker-compose up 时先解析 yml 文件的错误。比较常见的是 yml 对缩进的严格要求。

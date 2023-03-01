@@ -1,0 +1,171 @@
+{
+  "main": {
+    "id": "e3d67f1a9e81243f",
+    "type": "split",
+    "children": [
+      {
+        "id": "f58e131ceaccca32",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "635aeda2d3ca643b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "bug 修复流程.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d6808bbd92439135",
+    "type": "split",
+    "children": [
+      {
+        "id": "d5d353c169cb670c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "43aef259603bd5f4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a8dbe647e86b48ec",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "!",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "96f84cb55f45baaf",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 249.50390243530273
+  },
+  "right": {
+    "id": "4edbeb52508afdae",
+    "type": "split",
+    "children": [
+      {
+        "id": "86943c8e61dfdd70",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2e7dd0ca8b74aa2a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "bug 修复流程.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f294ecc46fd868be",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "bug 修复流程.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5bd54de64ebb62d4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0b28c820cb6a30ca",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "bug 修复流程.md"
+              }
+            }
+          },
+          {
+            "id": "10fcd91cc3fc4757",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "canvas:新建白板": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "635aeda2d3ca643b",
+  "lastOpenFiles": [
+    "authing-server 接口透传方案.md",
+    "桌搭笔记.md",
+    "软件开发的核心原则.md",
+    "如何从错误中成长.md",
+    "98 年程序员脱单.md",
+    "work-efficiency/README.md",
+    "work-efficiency/12 种习惯将提高您的工作效率并帮助您取得成功.md",
+    "redis/Redis 编程开发规范.md",
+    "redis/README.md",
+    "regular/README.md"
+  ]
+}

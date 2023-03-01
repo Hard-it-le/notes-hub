@@ -1,0 +1,13 @@
+{
+  "vimMode": true,
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "showLineNumber": true,
+  "spellcheck": false,
+  "attachmentFolderPath": "./",
+  "defaultViewMode": "preview",
+  "strictLineBreaks": false,
+  "trashOption": "local",
+  "newFileLocation": "current",
+  "showUnsupportedFiles": true
+}
